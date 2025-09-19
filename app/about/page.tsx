@@ -29,7 +29,7 @@ export default function AboutPage() {
                 </p>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Us Today: (03) 8888 1234
+                  Call Us Today: +61 451161253
                 </Button>
               </div>
               <div className="relative">
@@ -78,10 +78,10 @@ export default function AboutPage() {
                 <div className="text-4xl font-bold mb-2">500+</div>
                 <div className="text-blue-100">Happy Customers</div>
               </div>
-              <div>
+              {/* <div>
                 <div className="text-4xl font-bold mb-2">5+</div>
                 <div className="text-blue-100">Years Experience</div>
-              </div>
+              </div> */}
               <div>
                 <div className="text-4xl font-bold mb-2">1000+</div>
                 <div className="text-blue-100">Cleanings Completed</div>
@@ -143,7 +143,7 @@ export default function AboutPage() {
             </p>
             <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Call Now: (03) 8888 1234
+              Call Now: +61 451161253
             </Button>
           </div>
         </section>

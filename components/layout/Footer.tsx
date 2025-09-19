@@ -69,15 +69,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">(03) 8888 1234</span>
+                <span className="text-gray-400">+61 451161253</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">info@yetixcleaning.com.au</span>
+                <span className="text-gray-400">cleaning.yetix@hotmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-400">Melbourne, Victoria</span>
+                <span className="text-gray-400">Melbourne</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-blue-400" />

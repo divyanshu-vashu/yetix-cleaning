@@ -8,28 +8,28 @@ const services = [
     title: 'Residential Cleaning',
     description: 'Complete home cleaning services including kitchens, bathrooms, living areas, and bedrooms.',
     features: ['Regular weekly/fortnightly cleaning', 'One-off deep cleaning', 'Move-in/move-out cleaning'],
-    image: 'https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/home_clean.png'
   },
   {
     icon: Building,
     title: 'Commercial Cleaning',
     description: 'Professional office and business cleaning solutions to maintain a productive work environment.',
     features: ['Daily office cleaning', 'Reception & meeting rooms', 'Restroom sanitization'],
-    image: 'https://images.pexels.com/photos/4099092/pexels-photo-4099092.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/residental_cleaning.png'
   },
   {
     icon: Sparkles,
     title: 'Deep Cleaning',
     description: 'Thorough spring cleaning service covering every corner of your property.',
     features: ['Behind appliance cleaning', 'Window cleaning', 'Carpet deep cleaning'],
-    image: 'https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/deep_Clean.png'
   },
   {
     icon: Calendar,
     title: 'End of Lease Cleaning',
     description: 'Comprehensive cleaning service to ensure you get your full bond back.',
     features: ['Bond back guarantee', 'Oven & rangehood cleaning', 'Complete property sanitization'],
-    image: 'https://images.pexels.com/photos/4108128/pexels-photo-4108128.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image: '/end_of_lease.png'
   }
 ];
 
@@ -96,7 +96,7 @@ export default function Services() {
           </p>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
             <Phone className="h-5 w-5 mr-2" />
-            Call for Custom Quote: (03) 8888 1234
+            Call for Custom Quote: +61 451161253
           </Button>
         </div>
       </div>

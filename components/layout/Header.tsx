@@ -12,6 +12,7 @@ export default function Header() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
+    { name: 'Testimonials', href: '/testimonials' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -49,7 +50,7 @@ export default function Header() {
           {/* Phone Button - Desktop */}
           <Button className="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white" size="lg">
             <Phone className="h-5 w-5 mr-2" />
-            (03) 8888 1234
+            +61 451161253
           </Button>
 
           {/* Mobile Menu Button */}
@@ -82,7 +83,7 @@ export default function Header() {
             ))}
             <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Call (03) 8888 1234
+              Call +61 451161253
             </Button>
           </div>
         </div>

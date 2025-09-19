@@ -60,7 +60,7 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-4">Ready to book? Give us a call!</p>
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" size="lg">
                     <Phone className="h-4 w-4 mr-2" />
-                    (03) 8888 1234
+                    +61 451161253
                   </Button>
                 </CardContent>
               </Card>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">Send us your questions</p>
-                  <p className="font-semibold text-blue-600">info@yetixcleaning.com.au</p>
+                  <p className="font-semibold text-blue-600">cleaning.yetix@hotmail.com</p>
                 </CardContent>
               </Card>
 
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     </p>
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                       <Phone className="h-5 w-5 mr-2" />
-                      Call (03) 8888 1234
+                      Call +61 451161253
                     </Button>
                   </div>
 
@@ -210,7 +210,7 @@ export default function ContactPage() {
             </p>
             <Button className="bg-red-600 hover:bg-red-700 text-white" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Emergency Line: (03) 8888 1234
+              Emergency Line: +61 451161253
             </Button>
           </div>
         </section>

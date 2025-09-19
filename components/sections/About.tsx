@@ -34,8 +34,7 @@ export default function About() {
               Why Choose Yetix Cleaning?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              With over 5 years of experience serving Melbourne residents and businesses, 
-              we've built our reputation on reliability, quality, and exceptional customer service.
+            Melbourne’s newest pro cleaners with a simple promise: show up on time, clean like it’s our own.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
@@ -65,14 +64,14 @@ export default function About() {
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">500+</div>
+                  <div className="text-2xl font-bold text-blue-600">100+</div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div className="w-px h-12 bg-gray-200"></div>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">5+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
-                </div>
+                </div> */}
                 <div className="w-px h-12 bg-gray-200"></div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">100%</div>

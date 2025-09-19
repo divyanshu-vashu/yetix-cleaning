@@ -15,28 +15,28 @@ const services = [
   {
     title: 'Residential Cleaning',
     description: 'Complete home cleaning services tailored to your needs',
-    price: 'From $120',
+    price: 'From $149',
     features: ['Kitchen & bathrooms', 'Living areas', 'Bedrooms', 'Vacuuming & mopping', 'Dusting & wiping'],
     popular: true,
   },
   {
     title: 'Commercial Cleaning',
     description: 'Professional office and business cleaning solutions',
-    price: 'From $80',
+    price: 'From $99',
     features: ['Office spaces', 'Reception areas', 'Meeting rooms', 'Restrooms', 'Kitchen facilities'],
     popular: false,
   },
   {
     title: 'End of Lease Cleaning',
     description: 'Comprehensive cleaning to get your bond back',
-    price: 'From $280',
+    price: 'From $299',
     features: ['Bond back guarantee', 'Oven & rangehood', 'Cabinet interiors', 'Window cleaning', 'Carpet steam clean'],
     popular: false,
   },
   {
     title: 'Deep Cleaning',
     description: 'Thorough spring cleaning for homes and offices',
-    price: 'From $200',
+    price: 'From $199',
     features: ['Detailed cleaning', 'Hard-to-reach areas', 'Behind appliances', 'Window sills', 'Light fixtures'],
     popular: false,
   },
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                     </ul>
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                       <Phone className="h-5 w-5 mr-2" />
-                      Call to Book: (03) 8888 1234
+                      Call to Book: +61 451161253
                     </Button>
                   </CardContent>
                 </Card>
