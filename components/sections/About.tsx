@@ -55,7 +55,7 @@ export default function About() {
           {/* Stats & Image */}
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/4099139/pexels-photo-4099139.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/image.png"
               alt="Professional cleaning team"
               className="rounded-2xl shadow-lg w-full h-96 object-cover"
             />
