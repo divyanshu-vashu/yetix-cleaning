@@ -95,8 +95,10 @@ export default function Services() {
             we'll create a customized service plan that fits your needs and budget.
           </p>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
+            <a href="tel:+61451161253" className="hover:underline">
             <Phone className="h-5 w-5 mr-2" />
             Call for Custom Quote: +61 451161253
+            </a>
           </Button>
         </div>
       </div>
