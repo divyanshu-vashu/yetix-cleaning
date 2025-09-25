@@ -25,7 +25,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold">Call Us Now</div>
-                  <div className="text-blue-100">+61 451161253</div>
+                  <a href="tel:+61451161253" className="text-blue-100 hover:underline">+61 451161253</a>
                 </div>
               </div>
               
@@ -52,7 +52,7 @@ export default function Contact() {
 
             <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Call Now: +61 451161253
+              <a href="tel:+61451161253" className="hover:underline">Call Now: +61 451161253</a>
             </Button>
           </div>
 

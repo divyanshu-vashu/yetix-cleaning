@@ -29,7 +29,7 @@ export default function AboutPage() {
                 </p>
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Us Today: +61 451161253
+                  <a href="tel:+61451161253" className="hover:underline">Call Us Today: +61 451161253</a>
                 </Button>
               </div>
               <div className="relative">
@@ -143,7 +143,7 @@ export default function AboutPage() {
             </p>
             <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Call Now: +61 451161253
+              <a href="tel:+61451161253" className="hover:underline">Call Now: +61 451161253</a>
             </Button>
           </div>
         </section>

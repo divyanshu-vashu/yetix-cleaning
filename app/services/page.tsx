@@ -96,10 +96,12 @@ export default function ServicesPage() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="lg">
-                      <Phone className="h-5 w-5 mr-2" />
-                      Call to Book: +61 451161253
-                    </Button>
+                    <a href="tel:+61451161253" className="w-full block">
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="lg">
+                        <Phone className="h-5 w-5 mr-2" />
+                        Call to Book: +61 451161253
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               ))}

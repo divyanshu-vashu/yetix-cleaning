@@ -58,10 +58,12 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">Ready to book? Give us a call!</p>
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" size="lg">
-                    <Phone className="h-4 w-4 mr-2" />
-                    +61 451161253
-                  </Button>
+                  <a href="tel:+61451161253" className="w-full block">
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" size="lg">
+                      <Phone className="h-4 w-4 mr-2" />
+                      +61 451161253
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
 
@@ -133,10 +135,13 @@ export default function ContactPage() {
                     <p className="text-gray-700 mb-4">
                       Call us now for instant quotes and same-day booking availability.
                     </p>
+                    <a href="tel:+61451161253" className="w-full block">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
                       <Phone className="h-5 w-5 mr-2" />
                       Call +61 451161253
                     </Button>
+                    </a>
+
                   </div>
 
                   <div className="space-y-4">
@@ -208,10 +213,12 @@ export default function ContactPage() {
             <p className="text-xl text-red-700 mb-6">
               Need urgent cleaning services? Flood, fire, or accident cleanup?
             </p>
+            <a href="tel:+61451161253" className="w-full block">
             <Button className="bg-red-600 hover:bg-red-700 text-white" size="lg">
               <Phone className="h-5 w-5 mr-2" />
               Emergency Line: +61 451161253
             </Button>
+            </a>
           </div>
         </section>
       </main>

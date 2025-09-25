@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 h-auto">
                 <Phone className="h-6 w-6 mr-3" />
-                Call Now: +61 451161253
+                <a href="tel:+61451161253" className="hover:underline">Call Now: +61 451161253</a>
               </Button>
               {/* <Button variant="outline" className="border-2 border-white text-white bg-white/10 hover:text-white text-lg px-8 py-4 h-auto">
                 Learn More About Our Services

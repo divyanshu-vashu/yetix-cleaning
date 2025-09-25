@@ -48,10 +48,12 @@ export default function Header() {
           </nav>
 
           {/* Phone Button - Desktop */}
+          <a href="tel:+61451161253" className="w-full block">
           <Button className="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white" size="lg">
             <Phone className="h-5 w-5 mr-2" />
-            +61 451161253
+            <a href="tel:+61451161253" className="hover:underline">+61 451161253</a>
           </Button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -81,10 +83,12 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <a href="tel:+61451161253" className="w-full block">
             <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              Call +61 451161253
+              <a href="tel:+61451161253" className="hover:underline">Call +61 451161253</a>
             </Button>
+            </a>
           </div>
         </div>
       )}
