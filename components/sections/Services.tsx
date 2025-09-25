@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Home, Building, Sparkles, Calendar, Phone } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const services = [
   {
@@ -37,7 +39,6 @@ export default function Services() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Our Cleaning Services
@@ -48,14 +49,15 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200">
               <div className="relative overflow-hidden rounded-t-lg">
-                <img 
+                <Image 
                   src={service.image}
                   alt={service.title}
+                  width={400}
+                  height={192}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 bg-blue-600 p-3 rounded-full">
@@ -79,25 +81,27 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="sm">
-                  Get Quote
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" size="sm" asChild>
+                  <Link href="/contact">Get Quote</Link>
                 </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="bg-blue-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold mb-4">Need a Custom Cleaning Solution?</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Every space is different. Call us to discuss your specific cleaning requirements and 
             we'll create a customized service plan that fits your needs and budget.
           </p>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg">
-            <a href="tel:+61451161253" className="hover:underline">
-            <Phone className="h-5 w-5 mr-2" />
-            Call for Custom Quote: +61 451161253
+          {/* ===== FIX START: This button was incorrect ===== */}
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white" size="lg" asChild>
+            <a href="tel:+61451161253">
+              <span className="flex items-center justify-center">
+                <Phone className="h-5 w-5 mr-2" />
+                Call for Custom Quote: +61 451161253
+              </span>
             </a>
           </Button>
         </div>

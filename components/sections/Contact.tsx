@@ -17,7 +17,6 @@ export default function Contact() {
               We're available 7 days a week across Melbourne.
             </p>
 
-            {/* Contact Methods */}
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
                 <div className="bg-blue-500 p-3 rounded-lg">
@@ -50,13 +49,18 @@ export default function Contact() {
               </div>
             </div>
 
-            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">
-              <Phone className="h-5 w-5 mr-2" />
-              <a href="tel:+61451161253" className="hover:underline">Call Now: +61 451161253</a>
+            {/* ===== FIX START: This button was incorrect ===== */}
+            <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg" asChild>
+              <a href="tel:+61451161253">
+                <span className="flex items-center justify-center">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call Now: +61 451161253
+                </span>
+              </a>
             </Button>
+            {/* ===== FIX END ===== */}
           </div>
 
-          {/* Quick Info Cards */}
           <div className="space-y-6">
             <Card className="bg-white/10 border-white/20 text-white">
               <CardHeader>

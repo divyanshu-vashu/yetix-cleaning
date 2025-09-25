@@ -1,3 +1,5 @@
+// file: components/layout/Header.tsx
+
 'use client';
 
 import { useState } from 'react';
@@ -13,6 +15,7 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -23,14 +26,16 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img
+            <Image
               src="/image.png"
-              alt="Yetix Cleaning"
+              alt="Yetix Cleaning - Best Cleaning Service in Melbourne Logo" // <<-- Improved alt text
+              width={64}
+              height={64}
               className="h-16 w-16 rounded-full"
             />
             <div className="ml-3">
               <div className="text-2xl font-bold text-gray-900">Yetix</div>
-              <div className="text-sm text-blue-600">Professional Cleaning</div>
+              <div className="text-sm text-blue-600">Professional Cleaning Melbourne</div> {/* Added Melbourne */}
             </div>
           </Link>
 
@@ -48,12 +53,15 @@ export default function Header() {
           </nav>
 
           {/* Phone Button - Desktop */}
-          {/* <a href="tel:+61451161253" className="w-full block"> */}
-          <Button className="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white" size="lg">
-            <Phone className="h-5 w-5 mr-2" />
-            <a href="tel:+61451161253" className="hover:underline">+61 451161253</a>
+          <Button className="hidden md:flex bg-blue-600 hover:bg-blue-700" size="lg" asChild>
+            <a href="tel:+61451161253">
+              {/* Wrap the icon and text in a single span */}
+              <span className="flex items-center">
+                <Phone className="h-5 w-5 mr-2" />
+                +61 451161253
+              </span>
+            </a>
           </Button>
-          {/* </a> */}
 
           {/* Mobile Menu Button */}
           <button
@@ -83,12 +91,10 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            {/* <a href="tel:+61451161253" className="w-full block"> */}
             <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4" size="lg">
               <Phone className="h-5 w-5 mr-2" />
-              <a href="tel:+61451161253" className="hover:underline">Call +61 451161253</a>
+              <a href="tel:+61451161253" className="hover:underline">Call Yetix Cleaning: +61 451161253</a> {/* Added Yetix Cleaning */}
             </Button>
-            {/* </a> */}
           </div>
         </div>
       )}

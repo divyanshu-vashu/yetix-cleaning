@@ -1,25 +1,28 @@
+// file: components/sections/About.tsx
+
 import { Award, Users, Clock, Shield } from 'lucide-react';
+import Image from 'next/image';
 
 const features = [
   {
     icon: Award,
     title: 'Professional Excellence',
-    description: 'Trained professionals using industry-standard equipment and eco-friendly products.'
+    description: 'Yetix Cleaning uses trained professionals, industry-standard equipment, and eco-friendly products for top results in Melbourne.' // Added Yetix Cleaning and Melbourne
   },
   {
     icon: Users,
     title: 'Trusted Team',
-    description: 'Fully insured, vetted staff members you can trust in your home or business.'
+    description: 'Our Yetix Cleaning staff are fully insured, vetted, and trustworthy for your home or business in Melbourne.' // Added Yetix Cleaning and Melbourne
   },
   {
     icon: Clock,
     title: 'Flexible Scheduling',
-    description: 'Available 7 days a week with same-day service options across Melbourne.'
+    description: 'Yetix Cleaning is available 7 days a week with same-day service options across all of Melbourne.' // Added Yetix Cleaning and Melbourne
   },
   {
     icon: Shield,
     title: '100% Satisfaction',
-    description: 'Complete satisfaction guarantee - we\'ll return to fix any issues at no cost.'
+    description: 'Yetix Cleaning offers a complete satisfaction guarantee in Melbourne - we\'ll return to fix any issues at no cost.' // Added Yetix Cleaning and Melbourne
   }
 ];
 
@@ -31,11 +34,11 @@ export default function About() {
           {/* Content */}
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Why Choose Yetix Cleaning?
-            </h2>
+              Why Yetix Cleaning is the <span className="text-blue-600">Best Cleaning Service in Melbourne</span>
+            </h2> {/* <<-- Stronger H2 with keywords */}
             <p className="text-xl text-gray-600 mb-8">
-            Melbourne’s newest pro cleaners with a simple promise: show up on time, clean like it’s our own.
-            </p>
+            Yetix Cleaning, a leading **cleaning service in Melbourne**, stands out with a simple promise: show up on time, clean like it’s our own home or business, and guarantee your satisfaction. Experience true professional cleaning with Yetix.
+            </p> {/* Integrated keywords */}
             
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature, index) => (
@@ -54,28 +57,26 @@ export default function About() {
 
           {/* Stats & Image */}
           <div className="relative">
-            <img
-              src="/image.png"
-              alt="Professional cleaning team"
-              className="rounded-2xl shadow-lg w-full h-96 object-cover"
-            />
+            <div className="relative w-full h-96">
+              <Image
+                src="/image.png"
+                alt="Yetix Cleaning team providing best cleaning service in Melbourne"
+                fill
+                className="rounded-2xl shadow-lg object-cover"
+              />
+            </div>
             
             {/* Stats Overlay */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">100+</div>
-                  <div className="text-sm text-gray-600">Happy Clients</div>
+                  <div className="text-sm text-gray-600">Happy Yetix Cleaning Clients</div> {/* Added Yetix Cleaning */}
                 </div>
-                <div className="w-px h-12 bg-gray-200"></div>
-                {/* <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">5+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
-                </div> */}
                 <div className="w-px h-12 bg-gray-200"></div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">100%</div>
-                  <div className="text-sm text-gray-600">Satisfaction</div>
+                  <div className="text-sm text-gray-600">Satisfaction with Yetix Cleaning</div> {/* Added Yetix Cleaning */}
                 </div>
               </div>
             </div>

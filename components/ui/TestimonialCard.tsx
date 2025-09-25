@@ -1,3 +1,5 @@
+// file: components/ui/TestimonialCard.tsx
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
 import Image from 'next/image';
@@ -38,7 +40,7 @@ export function TestimonialCard({ testimonial, className = '' }: TestimonialCard
             <div className="relative h-12 w-12 rounded-full overflow-hidden">
               <Image 
                 src={testimonial.image} 
-                alt={testimonial.name}
+                alt={`${testimonial.name} - Yetix Cleaning Customer in ${testimonial.location}`} // <<-- Improved alt text
                 fill
                 className="object-cover"
               />
@@ -47,12 +49,12 @@ export function TestimonialCard({ testimonial, className = '' }: TestimonialCard
           <div>
             <div className="font-semibold text-gray-900">{testimonial.name}</div>
             {testimonial.role && (
-              <div className="text-sm text-gray-600">{testimonial.role}</div>
+              <div className="text-sm text-gray-600">{testimonial.role} at Yetix Cleaning</div> // Added Yetix Cleaning
             )}
             <div className="text-sm text-gray-600">{testimonial.location}</div>
             <div className="text-blue-600 text-sm font-medium mt-1">
-              {testimonial.service}
-            </div>
+              Yetix Cleaning Service: {testimonial.service}
+            </div> {/* Added Yetix Cleaning Service */}
           </div>
         </div>
       </CardContent>
